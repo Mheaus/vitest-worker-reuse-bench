@@ -1,0 +1,30 @@
+node v24.22.1, vitest 5.1.0
+## published
+pool=threads isolate=true runs=50 file-evaluations=50 workers=50 median=38.8ms min=35.9ms max=71.2ms
+pool=threads isolate=false runs=50 file-evaluations=50 workers=50 median=38.2ms min=35.3ms max=50.0ms
+pool=forks isolate=true runs=50 file-evaluations=50 workers=50 median=52.0ms min=49.3ms max=62.7ms
+pool=forks isolate=false runs=50 file-evaluations=50 workers=50 median=55.2ms min=50.4ms max=76.1ms
+pool=vmThreads isolate=true runs=50 file-evaluations=50 workers=50 median=60.3ms min=55.2ms max=85.6ms
+pool=vmForks isolate=true runs=50 file-evaluations=50 workers=50 median=84.4ms min=78.6ms max=100.3ms
+## patched
+pool=threads isolate=true runs=50 file-evaluations=50 workers=50 median=36.9ms min=35.6ms max=48.1ms
+pool=threads isolate=false runs=50 file-evaluations=50 workers=1 median=1.8ms min=0.8ms max=56.3ms
+pool=forks isolate=true runs=50 file-evaluations=50 workers=50 median=52.9ms min=49.8ms max=81.5ms
+pool=forks isolate=false runs=50 file-evaluations=50 workers=1 median=0.8ms min=0.7ms max=61.0ms
+pool=vmThreads isolate=true runs=50 file-evaluations=50 workers=1 median=8.4ms min=7.8ms max=73.4ms
+pool=vmForks isolate=true runs=50 file-evaluations=50 workers=1 median=9.0ms min=7.8ms max=87.5ms
+node v26.5.0, vitest 5.1.0
+## published
+pool=threads isolate=true runs=50 file-evaluations=50 workers=50 median=33.3ms min=32.7ms max=43.3ms
+pool=threads isolate=false runs=50 file-evaluations=50 workers=50 median=33.7ms min=33.0ms max=43.4ms
+pool=forks isolate=true runs=50 file-evaluations=50 workers=50 median=49.7ms min=48.0ms max=57.8ms
+pool=forks isolate=false runs=50 file-evaluations=50 workers=50 median=49.7ms min=48.1ms max=56.8ms
+pool=vmThreads isolate=true runs=50 file-evaluations=50 workers=50 median=52.5ms min=50.7ms max=72.1ms
+pool=vmForks isolate=true runs=50 file-evaluations=50 workers=50 median=76.4ms min=74.6ms max=89.5ms
+## patched
+pool=threads isolate=true runs=50 file-evaluations=50 workers=50 median=33.5ms min=32.8ms max=42.1ms
+pool=threads isolate=false runs=50 file-evaluations=50 workers=1 median=0.8ms min=0.6ms max=42.1ms
+pool=forks isolate=true runs=50 file-evaluations=50 workers=50 median=49.5ms min=48.2ms max=58.6ms
+pool=forks isolate=false runs=50 file-evaluations=50 workers=1 median=0.8ms min=0.7ms max=57.7ms
+pool=vmThreads isolate=true runs=50 file-evaluations=50 workers=1 median=8.3ms min=7.5ms max=67.7ms
+pool=vmForks isolate=true runs=50 file-evaluations=50 workers=1 median=8.5ms min=7.9ms max=85.5ms

@@ -1,0 +1,13 @@
+{
+  "name": "vitest-worker-reuse-bench",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "node bench.mjs",
+    "patch:keep": "node keep-runner-patch.mjs apply",
+    "patch:restore": "node keep-runner-patch.mjs restore"
+  },
+  "devDependencies": {
+    "vitest": "5.1.0"
+  }
+}
